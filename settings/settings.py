@@ -125,7 +125,7 @@ STATICFILES_DIRS = [
 ]
 
 # Телеграм бот конфигурация
-TELEGRAM_BOT_TOKEN = '7270506498:AAELKIrVipRDzzSntpP5k-TUGN4qg8v1CEQ'
+TELEGRAM_BOT_TOKEN = '6276587113:AAF24huOm8WgbF3UGHLyDOxFlp2aa9iHgss'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
