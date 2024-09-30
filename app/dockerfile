@@ -43,11 +43,5 @@ RUN mkdir -p /home/app \
 ENV HOME=/home/app
 ENV APP_HOME=/home/app/web
 
-# Copy entrypoint.prod.sh to the app's directory
-COPY entrypoint-prod.sh /app/entrypoint-prod.sh
-
 # Change to the app user
 USER app
-
-# Run entrypoint.prod.sh
-ENTRYPOINT ["/app/entrypoint-prod.sh"]
