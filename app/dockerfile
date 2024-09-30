@@ -1,4 +1,4 @@
-FROM python:3.8.3-alpine as builder
+FROM python:3.11.4-slim as builder
 
 WORKDIR /usr/src/app
 
@@ -17,7 +17,7 @@ COPY . .
 # RUN python setup.py bdist_wheel
 
 # Create final image
-FROM python:3.8.3-alpine
+FROM python:3.11.4-slim
 
 # Set the working directory
 WORKDIR /app
