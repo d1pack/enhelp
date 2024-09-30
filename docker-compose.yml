@@ -7,8 +7,6 @@ services:
     restart: always
     ports:
       - "8000:8000"
-    volumes:
-      - .:/code
     depends_on:
       - db
     links:
@@ -16,10 +14,12 @@ services:
   db:
     image: postgres
     restart: always
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
     environment:
       POSTGRES_USER: luxar
       POSTGRES_PASSWORD: sYst3m0ps
       POSTGRES_DB: django
 
 volumes:
-  service:
+  postgres_data:
